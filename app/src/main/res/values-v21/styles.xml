@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+                <!-- Customize your theme here. -->
+                <item name="colorPrimary">@color/colorPrimary</item>  <!--Actionbar-->
+                <item name="colorPrimaryDark">@color/colorPrimaryDark</item>  <!--statusbar-->
+                <!--<item name="textColorPrimary">@color/colorAccent</item>&lt;!&ndash;statusbarColor&ndash;&gt;-->
+                <item name="colorAccent">@color/colorAccent</item><!--Widget color-->
+                <!--<item name="android:windowBackground">@android:color/background_dark</item> &lt;!&ndash; window back ground&ndash;&gt;-->
+                <item name="android:navigationBarColor">@android:color/background_dark
+                </item><!-- navigation-->
+
+                <item name="android:windowExitTransition">@null</item>
+                <item name="android:windowEnterTransition">@null</item>
+                <item name="android:windowSharedElementEnterTransition">@null</item>
+                <item name="android:windowSharedElementExitTransition">@null</item>
+        </style>
+</resources>
