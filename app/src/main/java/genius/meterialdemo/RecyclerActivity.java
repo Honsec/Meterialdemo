@@ -76,7 +76,6 @@ public class RecyclerActivity extends AppCompatActivity {
                             if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
                                 ActivityOptions activityOptions = null;
                                 activityOptions = ActivityOptions.makeSceneTransitionAnimation(RecyclerActivity.this, Pair.create(holder.getView(R.id.item_recycler_textview),"txt"),Pair.create(holder.getView(R.id.item_recycler_image),"img"));
-                                activityOptions.update(ActivityOptions.makeCustomAnimation(RecyclerActivity.this,android.R.transition.move,android.R.transition.move));
                                 startActivity(intent,activityOptions.toBundle());
                             }else{
                                 startActivity(intent);

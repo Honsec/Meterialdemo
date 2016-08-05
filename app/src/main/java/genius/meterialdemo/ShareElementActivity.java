@@ -15,13 +15,13 @@ public class ShareElementActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.item_recyleritem);
+        setContentView(R.layout.item_recyleritem2);
 
         Bundle extras = getIntent().getExtras();
         try {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR1) {
                 String value = extras.getString("value", "");
-                ((TextView) findViewById(R.id.item_recycler_textview)).setText(value);
+                ((TextView) findViewById(R.id.item_recycler_textview2)).setText(value);
             }
         } catch (Exception e) {
             e.printStackTrace();
