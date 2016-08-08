@@ -11,9 +11,16 @@
                 <item name="android:navigationBarColor">@android:color/background_dark
                 </item><!-- navigation-->
 
-                <item name="android:windowExitTransition">@android:transition/fade</item>
-                <item name="android:windowEnterTransition">@android:transition/fade</item>
-                <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
-                <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+                <!--<item name="android:windowExitTransition">@android:transition/fade</item>-->
+                <!--<item name="android:windowEnterTransition">@android:transition/fade</item>-->
+                <!--<item name="android:windowSharedElementEnterTransition">@android:transition/move</item>-->
+                <!--<item name="android:windowSharedElementExitTransition">@android:transition/move</item>-->
+                <!--<item name="android:fragmentSharedElementEnterTransition">@android:transition/move</item>-->
+                <!--<item name="android:fragmentSharedElementReturnTransition">@android:transition/move</item>-->
+                <!--<item name="android:fragmentOpenEnterAnimation">@android:transition/fade</item>-->
+                <!--<item name="android:fragmentOpenExitAnimation">@android:transition/fade</item>-->
+                <!--<item name="android:fragmentCloseEnterAnimation">@android:transition/fade</item>-->
+                <!--<item name="android:fragmentCloseExitAnimation">@android:transition/fade</item>-->
+
         </style>
 </resources>

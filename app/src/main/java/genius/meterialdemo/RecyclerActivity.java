@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.view.ViewCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -73,8 +74,10 @@ public class RecyclerActivity extends AppCompatActivity {
 
                         Intent intent  = new Intent(RecyclerActivity.this,ShareElementActivity.class);
                         intent.putExtra("value",position+":"+s);
-                            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
-                                ActivityOptions activityOptions = null;
+                        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+                            ViewCompat.setTransitionName( holder.getView(R.id.item_recycler_image),position+"_img");
+                            ViewCompat.setTransitionName( holder.getView(R.id.item_recycler_textview),position+"_txt");
+                            ActivityOptions activityOptions = null;
                                 activityOptions = ActivityOptions.makeSceneTransitionAnimation(RecyclerActivity.this, Pair.create(holder.getView(R.id.item_recycler_textview),"txt"),Pair.create(holder.getView(R.id.item_recycler_image),"img"));
                                 startActivity(intent,activityOptions.toBundle());
                             }else{

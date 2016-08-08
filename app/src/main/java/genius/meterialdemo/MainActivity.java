@@ -39,6 +39,16 @@ public class MainActivity extends AppCompatActivity {
             }
 
     }
+    public void fragcard(View v){
+
+        Intent intent = new Intent(this,RecyclerFragActivity.class);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+            }else{
+                startActivity(intent);
+            }
+
+    }
     public void cardviewclick(View v){
 
         Intent intent = new Intent(this,CardViewActivity.class);
@@ -48,4 +58,16 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
     }
+
+
+//    @Override
+//    public void onBackPressed() {
+////        super.onBackPressed();
+//
+//        if(getSupportFragmentManager().getBackStackEntryCount()>0){
+//            getSupportFragmentManager().popBackStackImmediate();
+//        }else{
+//            super.onBackPressed();
+//        }
+//    }
 }
